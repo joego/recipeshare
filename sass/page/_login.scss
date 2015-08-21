@@ -1,0 +1,78 @@
+#login-buttons {
+  //float: right;
+  //height: 60px;
+  text-align: right;
+  background: #666;
+  margin: 0 -20px;
+}
+.login-link-text {
+  display: inline-block;
+  line-height: 60px;
+  color: #fff;
+  margin-right: 20px;
+  
+  &:hover {
+    color: #fff;
+  }
+}
+#login-dropdown-list {
+  //position: absolute;
+  //width: 250px;
+  //top: 10px;
+  //left: 50%;
+  //background-color: #fff;
+  //border: 1px solid #ccc;
+  //margin-left: 40px;
+  padding: 1em 20px;
+  margin-top: -60px;
+}
+.login-close-text {
+  display: inline-block;
+  padding: 0.2em 0 1em 2em;
+
+  background: #666;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
+.accounts-dialog input {
+  width: 100%;
+  padding: 1em;
+  margin: 0;
+}
+.login-form label,
+.accounts-dialog label {
+  display: none;
+}
+.login-button {
+  background: #09f;
+  color: #fff;
+  padding: 1em;
+  //margin: 0.5em 0 0.5em;
+  cursor: pointer;
+  text-align: center;
+  border-top: 1px solid #666;
+}
+.error-message { 
+  background-color: #c00;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em;
+}
+.additional-link-container {
+  text-align: right;
+  font-size: 80%;
+}
+.additional-link {
+  padding: 1em 0;
+  display: inline-block;
+  color: #fff;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+  }
+}

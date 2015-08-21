@@ -1,0 +1,3 @@
+@mixin resize-sprite-pos($sprite-map, $img-high-res, $proportion) {
+  background-position: round(nth(sprite-position($sprite-map, $img-high-res), 1) / $proportion) round(nth(sprite-position($sprite-map, $img-high-res), 2) / $proportion);
+}

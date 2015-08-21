@@ -1,0 +1,48 @@
+.share-buttons {
+  margin: $spacing-h auto 0 !important;
+  clear: both;
+  
+  h3 {
+    margin: 0;
+    line-height: 55px;
+    font-size: 22px;
+    // display: inline-block;
+    vertical-align: top;
+  }
+  ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a.share {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #666;
+    font-size: 24px;
+    padding: 0.4em;
+    text-align: center;
+    width: 55px;
+   
+    &.share-google-plus {
+      background-color: #dd4b39;
+    } 
+    &.share-facebook {
+      background-color: #325c99;
+    }
+    &.share-twitter {
+      background-color: #02acec;
+    }
+    &.share-youtube {
+      background-color: #b31217;
+    }
+    &.share-pinterest {
+      background-color: #c8232c;
+    }
+  }
+}

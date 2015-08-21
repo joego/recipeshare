@@ -1,0 +1,20 @@
+<template name="add">
+  <form class="recipe-form">
+    <input class="recipe-title full-input" type="text" placeholder="{{_ 'title' }}">
+    <input class="recipe-image full-input" type="text" placeholder="{{_ 'image' }}">
+    <textarea class="recipe-directions full-input" placeholder="{{_ 'directions' }}"></textarea>
+    <div class="recipe-ingredient">
+      <input class="full-input" type="text" placeholder="{{_ 'ingredient' }}">
+      <button class="remove-ingredient">&times;</button>
+    </div>
+    <button class="btn-full new-ingredient"><span class="fa fa-plus"> New Ingredient</span></button>
+  </form>
+</template>
+
+<template name="addMenu">
+  <nav class="dashboard">
+    <a class="btn cancel" title="Home" href="/"><span class="fa fa-close"></span></a>
+    <a class="btn search-item" title="{{_ 'search-item' }}" href="/search"><span class="fa fa-search"></span></a>
+    <a class="btn save-recipe" title="{{_ 'save-recipe' }}" href="#"><span class="fa fa-check"></span></a>
+  </nav>
+</template>

@@ -1,0 +1,23 @@
+@mixin title_font {
+  font-weight: 300;
+}
+html {
+  body {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    
+    @include bp (sm) {
+      font-size: 18px;
+    }
+    
+    @include bp (xs) {
+      font-size: 16px;
+    }
+    
+    b, strong, th {
+      font-weight: 600;
+    }
+  }
+}

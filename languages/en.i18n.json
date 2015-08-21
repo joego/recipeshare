@@ -1,0 +1,18 @@
+{
+  "intro-text": "Tell the world <br> what you like <br> to eat!",
+  "search": "Type here to search",
+  "search-item": "Search item",
+  "search-recipe": "Search recipe",
+  "add-recipe": "Add new recipe",
+  "title": "Titel",
+  "image": "URL for the image",
+  "directions": "Directions",
+  "ingredient": "Ingredient",
+  "ingredient-list-title": "Ingredients",
+  "new-ingredient": "Add new ingredient",
+  "save-recipe": "Save",
+  "edit-recipe": "Edit Recipe",
+  "remove-recipe": "Remove Recipe",
+  "cancel": "Cancel",
+  "about": "Informations about RecipeShare"
+}

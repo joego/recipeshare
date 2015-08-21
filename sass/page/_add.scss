@@ -1,0 +1,27 @@
+.recipe-ingredient .remove-ingredient {
+  display: none;
+}
+.recipe-ingredient.removable .remove-ingredient {
+  display: inline-block;
+}
+.remove-ingredient {
+  position: relative;
+  float: right;
+  top: -3.7em;
+  height: 3.7em;
+  width: 3.2em;
+  background: none;
+  border: none;
+  color: #999;
+  margin-bottom: -3.7em;
+  outline: none;
+}
+.remove-ingredient:hover,
+.remove-ingredient:focus,
+.remove-ingredient:active {
+  color: #c00;
+}
+.recipe-directions {
+  height: 200px;
+  resize: none;
+}

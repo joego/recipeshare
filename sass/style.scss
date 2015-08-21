@@ -1,0 +1,35 @@
+// Initial imports
+//@import "compass";
+//@import "compass/css3";
+
+// Mixins
+@import "mixins/responsive";
+
+// Vendor Plugins
+@import "rgbapng";
+@import "bootstrap-compass";
+@import "plugins/bootstrap-custom";
+@import "plugins/font-awesome/-main";
+//@import "plugins/blueimp-gallery";
+//@import "plugins/parsley";
+
+// Declarations
+@import "declarations/-main";
+
+// Custom Plugins
+//@import "plugins/share-buttons";
+//@import "plugins/scroll-top";
+
+html,
+body {
+  magin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  background: #eee;
+  color: #666;
+  font-size: 16px;
+}
+
+@import "page/-main";

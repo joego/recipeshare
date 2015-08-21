@@ -1,0 +1,9 @@
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  width: 600px;
+
+  @include bp(600px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+<template name="show">
+  <div class="recipe-details inner" id="{{_id}}">
+    <p class="recipe-details-image"><img src="{{image}}" alt="{{title}}"></p>
+    <h2 class="recipe-details-title">{{title}}</h2>
+    <h3>{{_ 'ingredient-list-title' }}</h3>
+    <ul>
+      {{#each ingredients}}
+      {{> ingredient}}
+      {{/each}}
+    </ul>
+    <h3>{{_ 'directions' }}</h3>
+    <p class="recipe-details-directions">{{directions}}</p>
+  </div>
+</template>
+
+<template name="ingredient">
+  <li>{{name}}</li>
+</template>
+
+<template name="showMenu">
+  <nav class="dashboard">
+    <a class="btn cancel" title="Home" href="/"><span class="fa fa-th"></span></a>
+    <a class="btn search-item" title="{{_ 'search-item' }}" href="/search"><span class="fa fa-search"></span></a>
+    {{#if isOwner}}
+    <a class="btn edit-recipe" title="{{_ 'edit-recipe' }}" href="#"><span class="fa fa-pencil"></span></a>
+    {{else}}
+    <a class="btn about" title="{{_ 'about' }}" href="/about"><span class="fa fa-info-circle"></span></a>
+    {{/if}}
+  </nav>
+</template>

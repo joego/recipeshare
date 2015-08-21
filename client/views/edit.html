@@ -1,0 +1,38 @@
+<template name="edit">
+  <div class="recipe-form" id="{{_id}}" data-created="{{createdAt}}">
+    <input class="recipe-title full-input" type="text" value="{{title}}">
+    <input class="recipe-image full-input" type="text" value="{{image}}">
+    <textarea class="recipe-directions full-input" value="{{directions}}"></textarea>
+    {{#if hasIngredients}}
+      {{#each ingredients}}
+      {{> recipeIngredientInput}}
+      {{/each}}
+    {{else}}
+      <div class="recipe-ingredient">
+        <input class="full-input" type="text" placeholder="{{_ 'ingredient' }}">
+        <button class="remove-ingredient">&times;</button>
+      </div>
+    {{/if}}
+    <button class="btn-full new-ingredient"><span class="fa fa-plus"> New Ingredient</span></button>
+  </div>
+</template>
+
+<template name="recipeIngredientInput">
+  <div class="recipe-ingredient removable">
+    <input class="full-input" type="text" placeholder="{{_ 'ingredient' }}" value="{{name}}">
+    <button class="remove-ingredient">&times;</button>
+  </div>
+</template>
+
+<template name="editMenu">
+  <nav class="dashboard">
+    <a class="btn cancel" title="{{_ 'cancel' }}" href="/recipe/{{_id}}"><span class="fa fa-arrow-left"></span></a>
+    {{#if isOwner}}
+    <a class="btn remove-recipe" title="{{_ 'remove-recipe' }}" href="#"><span class="fa fa-trash"></span></a>
+    <a class="btn save-recipe" title="{{_ 'save-recipe' }}" href="#"><span class="fa fa-check"></span></a>
+    {{else}}
+    <a class="btn search-recipe" title="{{_ 'search-recipe' }}" href="/search"><span class="fa fa-search"></span></a>
+    <a class="btn add-recipe" title="{{_ 'add-recipe' }}" href="/add-item"><span class="fa fa-plus"></span></a>
+    {{/if}}
+  </nav>
+</template>

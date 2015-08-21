@@ -1,0 +1,43 @@
+// ---
+// Basic colors
+// ---
+
+$white: #fff;
+$black: #000;
+
+$dark-gray: #666;
+$gray: #999;
+$light-gray: #e6e6e6;
+
+$purple: #6d5ca5;
+$dark-purple: #4c4073;
+
+// ---
+// Selected colors
+// ---
+
+$red: #c00;
+$dark-red: #900;
+$blue: #09f;
+
+// ---
+// Theme specific colors
+// ---
+
+$main-color: $dark-gray;
+$light-color: lighten($main-color, 30%);
+$dark-color: $dark-gray;
+
+$bg-color: $white;
+$txt-color: $dark-gray;
+$header-txt-color: $dark-gray;
+
+$focus-color: $red;
+$link-color:  $blue;
+$button-color: $red;
+
+$menu-color: $gray;
+
+$sidebar-bg-color: $light-gray;
+$sidebar-title-bg: $light-gray;
+$sidebar-icon-bg: $gray;

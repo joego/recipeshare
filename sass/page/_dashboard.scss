@@ -1,0 +1,54 @@
+.dashboard {
+  display: table;
+  width: 100%;
+  
+  &.col-2 .btn {
+    width: 50%;
+    text-align: right;
+    padding: 0 $header-height;
+    
+    &:first-child {
+      text-align: left;
+    }
+  }     
+  
+  .btn {
+    display: table-cell;
+    vertical-align: middle;
+    border: none;
+    border-left: 1px solid #fff;
+    background: #ccc;
+    color: #fff;
+    height: 60px;
+    text-align: center;
+    font-size: 36px;
+    text-decoration: none;
+    
+    &:first-child {
+      border-left: none;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      background: #666;
+      outline: none;
+    }
+    .btn-text {
+      text-transform: uppercase;
+      font-size: 70%;
+      display: block;
+      //position: relative;
+      //top: -2px;
+      line-height: $header-height;
+      height: $header-height;
+    }
+  }
+  
+  .fa {
+    text-align: center;
+    width: $header-height;
+    height: $header-height;
+    line-height: $header-height;
+    margin: 0 0 - $header-height;
+  }
+}

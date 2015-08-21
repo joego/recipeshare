@@ -1,0 +1,17 @@
+.recipe-details p,
+.recipe-details-directions {
+  margin: 1em 0;
+}
+.recipe-details p.recipe-details-image {
+  margin: 0 -20px 1em;
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.recipe-details-title {
+  text-align: center;
+  line-height: 1;
+  font-size: 2em;
+}

@@ -1,0 +1,20 @@
+.page {
+  min-width: 320px;
+  min-height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+// Struktur
+@import "content";
+@import "footer";
+@import "header";
+
+// Separated pages
+@import "about";
+@import "add";
+@import "dashboard";
+@import "home";
+@import "login";
+@import "show";

@@ -1,0 +1,33 @@
+div.parsley-error,
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 0.8em;
+  font-size: 0.8em;
+  position: relative;
+    top: -2em;
+    z-index: 2;
+  color: #fff;
+  background-color: #a94442;
+  @include opacity(0);
+  @include transition( all .3s ease-in );
+}
+.selectbox .parsley-errors-list {
+  top: -1.5em;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+.input-group .parsley-errors-list {
+  position: static;
+  margin-bottom: 0;
+}

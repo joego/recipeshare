@@ -1,0 +1,32 @@
+
+@mixin bp($size) {
+  @if ($size == 'xxs') {
+    @media (max-width: 500px) {
+      @content;
+    }
+  } @else if ($size == 'xs') {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if ($size == 'sm') {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if ($size == 'md') {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  } @else if ($size == 'lg') {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $size) {
+      @content;
+    }
+  }
+}
+
+.print-only { 
+  display: none !important; 
+}

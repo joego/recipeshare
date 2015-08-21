@@ -1,0 +1,25 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RecipeShare</title>
+</head>
+
+<body></body>
+
+<template name="masterLayout">
+  <div class="page">
+  
+    <header class="page-header">
+      <h1 class="app-title"><a href="/">RecipeShare</a></h1>
+      {{> loginButtons}}
+    </header>
+
+    <div class="page-content">
+      {{> yield "content"}}
+    </div>
+    
+    <footer class="page-footer">
+      {{> yield "footer"}}
+    </footer>
+    
+  </div>
+</template>
