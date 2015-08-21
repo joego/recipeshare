@@ -1,4 +1,4 @@
-# recipeshare
+# RecipeShare
 
 This is a web-app based on meteor.
 
