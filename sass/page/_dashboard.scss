@@ -2,16 +2,6 @@
   display: table;
   width: 100%;
   
-  &.col-2 .btn {
-    width: 50%;
-    text-align: right;
-    padding: 0 $header-height;
-    
-    &:first-child {
-      text-align: left;
-    }
-  }     
-  
   .btn {
     display: table-cell;
     vertical-align: middle;
@@ -25,22 +15,13 @@
     text-decoration: none;
     
     &:first-child {
-      border-left: none;
+      border-left-color: #ccc;
     }
     &:hover,
     &:focus,
     &:active {
       background: #666;
       outline: none;
-    }
-    .btn-text {
-      text-transform: uppercase;
-      font-size: 70%;
-      display: block;
-      //position: relative;
-      //top: -2px;
-      line-height: $header-height;
-      height: $header-height;
     }
   }
   

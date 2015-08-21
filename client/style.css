@@ -4020,14 +4020,6 @@ body {
   display: table;
   width: 100%;
 }
-.dashboard.col-2 .btn {
-  width: 50%;
-  text-align: right;
-  padding: 0 60px;
-}
-.dashboard.col-2 .btn:first-child {
-  text-align: left;
-}
 .dashboard .btn {
   display: table-cell;
   vertical-align: middle;
@@ -4041,18 +4033,11 @@ body {
   text-decoration: none;
 }
 .dashboard .btn:first-child {
-  border-left: none;
+  border-left-color: #ccc;
 }
 .dashboard .btn:hover, .dashboard .btn:focus, .dashboard .btn:active {
   background: #666;
   outline: none;
-}
-.dashboard .btn .btn-text {
-  text-transform: uppercase;
-  font-size: 70%;
-  display: block;
-  line-height: 60px;
-  height: 60px;
 }
 .dashboard .fa {
   text-align: center;
