@@ -1,8 +1,3 @@
-//Template.loginButtons.events({
-//  "click .login-link-text": function (e) {
-//  }
-//});
-
 Template.loginButtons.onRendered( function () {
   
   $(".page").bind("DOMSubtreeModified", function() {
@@ -12,4 +7,5 @@ Template.loginButtons.onRendered( function () {
       .find('#login-old-password').attr('placeholder', 'Current password').end()
       .find('#login-password-again').attr('placeholder', 'Password (again)');
   });
+  
 });

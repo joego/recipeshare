@@ -14,5 +14,9 @@
   "edit-recipe": "Edit Recipe",
   "remove-recipe": "Remove Recipe",
   "cancel": "Cancel",
-  "about": "Informations about RecipeShare"
+  "about": "Informations about RecipeShare",
+  "username": "Username",
+  "password": "Password",
+  "password-again": "Password (again)",
+  "current-password": "Current password"
 }
