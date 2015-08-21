@@ -1,4 +1,18 @@
 {
-  "intro-text": "Conheça o que há de melhor para comer!",
-  "search": "Escreva aqui para buscar"
+  "intro-text": "Divulgue <br> o que você gosta <br> de comer",
+  "search": "Escreva aqui para buscar",
+  "search-item": "Buscar item",
+  "search-recipe": "Buscar receita",
+  "add-recipe": "Adicionar nova receita",
+  "title": "Título",
+  "image": "URL da imagem",
+  "directions": "Modo de preparo",
+  "ingredient": "Ingrediente",
+  "ingredient-list-title": "Ingredientes",
+  "new-ingredient": "Adicionar novo ingrediente",
+  "save-recipe": "Salvar",
+  "edit-recipe": "Editar Receita",
+  "remove-recipe": "Remover Receita",
+  "cancel": "Cancelar",
+  "about": "Informações sobre RecipeShare"
 }

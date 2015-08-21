@@ -1,4 +1,18 @@
 {
-  "intro-text": "Lerne das Essen, was am besten für dich gibt, kennen!",
-  "search": "Gebe hier ein"
+  "intro-text": "Zeig der Welt <br> dein geliebtes <br> Essen",
+  "search": "Gebe hier ein",
+  "search-item": "Artikelsuche",
+  "search-recipe": "Rezeptsuche",
+  "add-recipe": "Neues Rezept hinzufügen",
+  "title": "Titel",
+  "image": "Bild-URL",
+  "directions": "Zubereitung",
+  "ingredient": "Zutat",
+  "ingredient-list-title": "Zutaten",
+  "new-ingredient": "Neue Zutat hinzugefügt",
+  "save-recipe": "Speichern",
+  "edit-recipe": "Rezept bearbeiten",
+  "remove-recipe": "Rezept entfernen",
+  "cancel": "Abbrechen",
+  "about": "Informationen über RecipeShare"
 }

@@ -11,8 +11,7 @@ function getUserLanguage() {
   else {
     var lang = "en";
   }
-  //return lang;
-  return "en";
+  return lang;
 }
 
 Meteor.startup(function () {
@@ -23,10 +22,6 @@ Meteor.startup(function () {
       Session.set("showLoadingIndicator", false);
     })
     .fail(function (error_message) {
-      // Handle the situation
       console.error(error_message);
     });
-
-  //accountsUIBootstrap3.setLanguage(getUserLanguage());
-  
 });
