@@ -12,6 +12,18 @@ Template.home.onRendered( function() {
   });
 });
 
+Template.home.onCreated( function() {
+  if('querySelector' in document
+    && 'localStorage' in window
+    && 'addEventListener' in window) {
+    console.log('new');
+  } else {
+    var msg = 'You are using an obsolete browser. Please install a modern browser to view this page. You can try <a href="https://www.mozilla.org/firefox/">Firefox</a> for example.';
+    document.write(msg);
+    throw new Error(msg);
+  }
+});
+
 Template.dashboard.events({
   "click .add-item": function(e) {
     e.preventDefault();
