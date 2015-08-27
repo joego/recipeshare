@@ -7,15 +7,13 @@ Template.show.events({
   }
 });
 
-//Template.show.helpers({
-//  ingredients: function() {
-//    var ingredientList = [];
-//    for (i in this.ingredients) {
-//      ingredientList.push({name: this.ingredients[i]});
-//    }
-//    return ingredientList;
-//  }
-//});
+Template.show.helpers({
+  recipeImg: function() {
+    var currRecipe = Recipes.findOne(this._id);
+    var imageImg = currRecipe.image;
+    return Images.findOne(imageImg);
+  }
+});
 
 Template.show.onRendered( function() {
   $('.recipe-details-directions').html($('.recipe-details-directions').html().replace(/\r?\n/g, '<br>'));

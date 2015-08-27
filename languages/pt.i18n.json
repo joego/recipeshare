@@ -5,7 +5,7 @@
   "search-recipe": "Buscar receita",
   "add-recipe": "Adicionar nova receita",
   "title": "Título",
-  "image": "URL da imagem",
+  "image": "Selecione uma imagem",
   "directions": "Modo de preparo",
   "ingredient": "Ingrediente",
   "ingredient-list-title": "Ingredientes",
@@ -14,5 +14,16 @@
   "edit-recipe": "Editar Receita",
   "remove-recipe": "Remover Receita",
   "cancel": "Cancelar",
-  "about": "Informações sobre RecipeShare"
+  "about": "Informações sobre RecipeShare",
+  "username": "Usuário",
+  "password": "Senha",
+  "password-again": "Senha (denovo)",
+  "current-password": "Senha atual",
+  "upload": "Upload",
+  "change": "Trocar",
+  "name": "Nome",
+  "email": "Email",
+  "message": "Mensagem",
+  "contact-title": "Compartilhe sua opnião conosco",
+  "send": "Enviar"
 }

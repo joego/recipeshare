@@ -1,3 +1,6 @@
+Meteor.subscribe('recipes');
+Meteor.subscribe('images');
+
 Template.registerHelper('isOwner', function () {
   return this.owner === Meteor.userId();
 });
@@ -15,7 +18,7 @@ Template.registerHelper('ingredients', function() {
 });
 
 Template.registerHelper('hasIngredients', function() {
-  if (this.ingredients.length === 0) {
+  if (this.ingredients === undefined || this.ingredients.length === 0) {
     return false;
   } else {
     return true;

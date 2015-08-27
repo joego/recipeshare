@@ -9,3 +9,7 @@ accounts-password
 tap:i18n
 accounts-ui-unstyled
 iron:router
+cfs:standard-packages
+cfs:filesystem
+cfs:gridfs
+email

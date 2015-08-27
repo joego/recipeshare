@@ -1,20 +1,41 @@
 <template name="add">
-  <form class="recipe-form">
+  <div class="recipe-form">
     <input class="recipe-title full-input" type="text" placeholder="{{_ 'title' }}">
-    <input class="recipe-image full-input" type="text" placeholder="{{_ 'image' }}">
     <textarea class="recipe-directions full-input" placeholder="{{_ 'directions' }}"></textarea>
     <div class="recipe-ingredient">
       <input class="full-input" type="text" placeholder="{{_ 'ingredient' }}">
       <button class="remove-ingredient">&times;</button>
     </div>
-    <button class="btn-full new-ingredient"><span class="fa fa-plus"> New Ingredient</span></button>
+  </div>
+  <button class="btn-full new-ingredient"><span class="fa fa-plus"> {{_ 'new-ingredient' }}</span></button>
+</template>
+
+<template name="addImg">
+  <form class="recipe-image">
+    <input class="recipe-image-file sr-only" type="file">
+    {{#if recipeImg.isUploaded}}
+    <img src="{{recipeImg.url}}" alt="{{title}}">
+    {{else}}
+    <span class="fa fa-plus fa-3x"></span>
+    {{/if}}
   </form>
+  <button class="btn-full recipe-image-button-add"><span class="fa fa-plus"></span> Add image</button>
+  <button class="btn-full recipe-image-button-change hidden">{{_ 'change' }}</button>
 </template>
 
 <template name="addMenu">
   <nav class="dashboard">
     <a class="btn cancel" title="Home" href="/"><span class="fa fa-close"></span></a>
     <a class="btn search-item" title="{{_ 'search-item' }}" href="/search"><span class="fa fa-search"></span></a>
-    <a class="btn save-recipe" title="{{_ 'save-recipe' }}" href="#"><span class="fa fa-check"></span></a>
+    <a class="btn save-recipe" title="{{_ 'save-recipe' }}" href="#"><span class="fa fa-arrow-right"></span></a>
+    <a class="btn add-image hidden" title="{{_ 'add-image' }}" href="#"><span class="fa fa-check"></span></a>
+  </nav>
+</template>
+
+<template name="addImgMenu">
+  <nav class="dashboard">
+    <a class="btn back" title="Home" href="/"><span class="fa fa-arrow-left"></span></a>
+    <a class="btn search-item" title="{{_ 'search-item' }}" href="/search"><span class="fa fa-search"></span></a>
+    <a class="btn add-image" title="{{_ 'add-image' }}" href="#"><span class="fa fa-check"></span></a>
   </nav>
 </template>

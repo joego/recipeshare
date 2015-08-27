@@ -7,21 +7,55 @@
 .remove-ingredient {
   position: relative;
   float: right;
-  top: -3.7em;
-  height: 3.7em;
-  width: 3.2em;
+  top: -3.5em;
+  height: 3em;
+  width: 3em;
   background: none;
   border: none;
   color: #999;
   margin-bottom: -3.7em;
   outline: none;
+  right: 0.5em;
+  @include border-radius(2em);
 }
 .remove-ingredient:hover,
 .remove-ingredient:focus,
 .remove-ingredient:active {
-  color: #c00;
+  color: #fff;
+  background: #c00;
 }
 .recipe-directions {
   height: 200px;
   resize: none;
+}
+
+//.recipe-image {
+//  display: table;
+//  width: 100%;
+//}
+.recipe-image-text,
+.recipe-image {
+  text-align: center;
+  padding: 40% 0;
+  position: relative;
+  background: #ccc;
+  overflow: hidden;
+  
+  img {
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 50%;
+    @include transform ( translateY(-50%) );
+    
+    width: 100%;
+    height: auto;
+  }
+  .fa {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -0.5em;
+    width: 100%;
+  }
 }

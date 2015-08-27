@@ -1,0 +1,11 @@
+<template name="mail">
+  <div class="text-center about-page">
+    <h2>{{_ 'contact-title' }}</h2>
+    <div class="mail-form">
+      <input type="text" class="author-name full-input" placeholder="{{_ 'name' }}" required>
+      <input type="text" class="author-email full-input" placeholder="{{_ 'email' }}" required>
+      <textarea class="mail-message full-input" placeholder="{{_ 'message' }}" required></textarea>
+      <button class="btn-send-message btn-full">{{_ 'send' }}</button>
+    </div>
+  </div>
+</template>

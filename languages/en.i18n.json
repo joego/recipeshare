@@ -5,7 +5,7 @@
   "search-recipe": "Search recipe",
   "add-recipe": "Add new recipe",
   "title": "Title",
-  "image": "URL for the image",
+  "image": "Choose the image",
   "directions": "Directions",
   "ingredient": "Ingredient",
   "ingredient-list-title": "Ingredients",
@@ -18,5 +18,12 @@
   "username": "Username",
   "password": "Password",
   "password-again": "Password (again)",
-  "current-password": "Current password"
+  "current-password": "Current password",
+  "upload": "Upload",
+  "change": "Change",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "contact-title": "Share your opinion with us",
+  "send": "Send"
 }

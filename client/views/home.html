@@ -11,22 +11,21 @@
 </template>
 
 <template name="recipe">
-  <a class="recipe-entry" href="recipe/{{_id}}" title="{{title}}" data-image="{{image}}"><img src="{{image}}" alt="{{title}}" class="sr-only"></a>
+  <a class="recipe-entry" href="recipe/{{_id}}" title="{{title}}"><img src="{{recipeImg.url}}" alt="{{title}}"></a>
 </template>
 
 <template name="dashboard">
   <nav class="dashboard">
     <a class="btn home" title="Home" href="/"><span class="fa fa-th"></span></a>
-    <a class="btn search-item" title="{{_ 'search-item' }}" href="/search"><span class="fa fa-search"></span></a>
-  {{#if isLogged}}
-    <a class="btn add-item" title="{{_ 'add-recipe' }}" href="/add-item"><span class="fa fa-plus"></span></a>
-    {{!
-    <a class="btn-icon remove-all" title="Remove all" href="#"><span class="fa fa-trash"></span></a>
-    <!--TODO: Add favorites-->
-    <a class="btn favorits-list" title="Favorite items" href="favorite"><span class="fa fa-star"></span></a>
-    }}
-  {{else}}
-    <a class="btn about" title="{{_ 'about' }}" href="/about"><span class="fa fa-info-circle"></span></a>
-  {{/if}}
+    <a class="btn mail" title="Mail" href="/mail"><span class="fa fa-envelope"></span></a>
+    {{#if isLogged}}
+      <a class="btn add-item" title="{{_ 'add-recipe' }}" href="/add-item"><span class="fa fa-plus"></span></a>
+      <!--TODO: Add search feature-->
+      <!--<a class="btn search-item" title="{{_ 'search-item' }}" href="/search"><span class="fa fa-search"></span></a>-->
+      <!--TODO: Add favorites-->
+      <!--<a class="btn favorits-list" title="Favorite items" href="favorite"><span class="fa fa-star"></span></a>-->
+    {{else}}
+      <a class="btn about" title="{{_ 'about' }}" href="/about"><span class="fa fa-info-circle"></span></a>
+    {{/if}}
   </nav>
 </template>

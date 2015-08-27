@@ -1,6 +1,7 @@
 <template name="show">
   <div class="recipe-details inner" id="{{_id}}">
-    <p class="recipe-details-image"><img src="{{image}}" alt="{{title}}"></p>
+    <!--<p class="recipe-details-image"><img src="{{image}}" alt="{{title}}"></p>-->
+    <p class="recipe-details-image" id="{{recipeImg._id}}"><img src="{{recipeImg.url}}" alt="{{title}}"></p>
     <h2 class="recipe-details-title">{{title}}</h2>
     <h3>{{_ 'ingredient-list-title' }}</h3>
     <ul>
