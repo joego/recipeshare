@@ -1,6 +1,6 @@
 Template.home.helpers({
   recipes: function() {
-    return Recipes.find();
+    return Recipes.find({}, {limit: 10});
   }
 });
 
@@ -16,8 +16,10 @@ Template.recipe.onRendered( function() {
   var self = $(this.firstNode),
     imgsrc = self.find('img').attr('src');
   self
+    .height(0)
     .css('background-image', 'url(' + imgsrc + ')')
-    .find('img').addClass('sr-only');
+    .find('img').addClass('hidden')
+    .removeAttr('style');
 });
 
 Template.home.onCreated( function() {

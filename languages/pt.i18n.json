@@ -25,5 +25,7 @@
   "email": "Email",
   "message": "Mensagem",
   "contact-title": "Compartilhe sua opnião conosco",
-  "send": "Enviar"
+  "send": "Enviar",
+  "error-404-title": "Erro 404",
+  "error-404-text": "Desculpe-nos, mas não há nada aqui."
 }
