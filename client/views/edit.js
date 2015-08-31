@@ -45,11 +45,27 @@ Template.editMenu.events({
     e.preventDefault();
     
     // Delete recipe
-    Meteor.call('deleteItem', this._id, function(){
-      // Go back to home
-      Router.go('/');
-    });
+    Meteor.call('deleteItem', this._id);
+    
+    // Go back to home
+    Router.go('/');
 
+  },
+  
+  "click .cancel": function(e) {
+    // Prevent default action
+    e.preventDefault();
+
+    if ( Recipes.findOne(this._id).image === undefined ) {
+      // Delete recipe
+      Meteor.call('deleteItem', this._id, function(){
+        // Go back to home
+        Router.go('/');
+      });
+    } else {
+      // Show recipe
+      Router.go('/recipe/'+this._id);
+    }
   }
 });
 
@@ -123,7 +139,7 @@ Template.editImgMenu.events({
     }
     // Delete unused images from database
     for (i in unusedImages) {
-      Images.remove(unusedImages[i]);
+      Meteor.call('removeImg', unusedImages[i]);
     }
     // Clear list of unused images
     unusedImages = [];
@@ -132,6 +148,17 @@ Template.editImgMenu.events({
     var url = window.location.href;
     url = url.replace('/edit/image','');
     Router.go(url);
+  },
+
+  "click .remove-recipe": function(e) {
+    // Prevent default action
+    e.preventDefault();
+
+    // Delete recipe
+    Meteor.call('deleteItem', this._id, function(){
+      // Go back to home
+      Router.go('/');
+    });
 
   }
 });

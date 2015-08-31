@@ -99,9 +99,6 @@ Template.addImg.events({
   
   "change .recipe-image-file" : function(e) {
   
-    $('.recipe-image-button-add').addClass('hidden');
-    $('.recipe-image-button-change').removeClass('hidden');
-  
     var files = e.target.files;
     for (var i = 0, ln = files.length; i < ln; i++) {
       Images.insert(files[i], function (err, fileObj) {
@@ -114,6 +111,12 @@ Template.addImg.events({
           };
           Session.set('currImg', data);
           unusedImages.push(fileObj._id);
+
+          // Add image reference to the recipe
+          Meteor.call("updateImg", data, function() {
+            // Load edit image page
+            Router.go('/recipe/'+currId+'/edit/image');
+          });
         }
       });
     }
@@ -141,23 +144,29 @@ Template.addImgMenu.events({
 
     var data = Session.get('currImg');
     if (data !== undefined) {
-      // Add image reference to the recipe
-      Meteor.call("updateImg", data, function() {
-        // Remove image from list of unused
-        var i = unusedImages.indexOf(data.imageId);
-        if (i !== -1) { unusedImages.splice(i, 1); }
-        // Delete unused images
-        for (i in unusedImages) {
-          Images.remove(unusedImages[i]);
-        }
-        // Clear list of unused images
-        unusedImages = [];
-      });
+      // Remove image from list of unused
+      var i = unusedImages.indexOf(data.imageId);
+      if (i !== -1) { unusedImages.splice(i, 1); }
+      // Delete unused images
+      for (i in unusedImages) {
+        Meteor.call('removeImg', unusedImages[i]);
+      }
+      // Clear list of unused images
+      unusedImages = [];
       Session.set('currImg', undefined);
     }
     
     // Show recipe
     Router.go("/recipe/"+currId);
+
+  },
+  
+  "click .back" : function (e) {
+
+    // Prevent default action
+    e.preventDefault();
+    
+    Router.go('/recipe/'+currId+'/edit');
 
   }
   

@@ -20,13 +20,13 @@
     {{/if}}
   </form>
   <button class="btn-full recipe-image-button-add"><span class="fa fa-plus"></span> Add image</button>
-  <button class="btn-full recipe-image-button-change hidden">{{_ 'change' }}</button>
 </template>
 
 <template name="addMenu">
   <nav class="dashboard">
-    <a class="btn cancel" title="Home" href="/"><span class="fa fa-close"></span></a>
-    <a class="btn search-item" title="{{_ 'search-item' }}" href="/search"><span class="fa fa-search"></span></a>
+    <a class="btn cancel" title="Home" href="/"><span class="fa fa-arrow-left"></span></a>
+    <!--<a class="btn search-item" title="{{_ 'search-item' }}" href="/search"><span class="fa fa-search"></span></a>-->
+    <a class="btn mail" title="Mail" href="/mail"><span class="fa fa-envelope"></span></a>
     <a class="btn save-recipe" title="{{_ 'save-recipe' }}" href="#"><span class="fa fa-arrow-right"></span></a>
     <a class="btn add-image hidden" title="{{_ 'add-image' }}" href="#"><span class="fa fa-check"></span></a>
   </nav>
@@ -34,8 +34,9 @@
 
 <template name="addImgMenu">
   <nav class="dashboard">
-    <a class="btn back" title="Home" href="/"><span class="fa fa-arrow-left"></span></a>
-    <a class="btn search-item" title="{{_ 'search-item' }}" href="/search"><span class="fa fa-search"></span></a>
+    <a class="btn back" title="{{_ 'edit-recipe' }}" href="#"><span class="fa fa-arrow-left"></span></a>
+    <!--<a class="btn search-item" title="{{_ 'search-item' }}" href="/search"><span class="fa fa-search"></span></a>-->
+    <a class="btn mail" title="Mail" href="/mail"><span class="fa fa-envelope"></span></a>
     <a class="btn add-image" title="{{_ 'add-image' }}" href="#"><span class="fa fa-check"></span></a>
   </nav>
 </template>

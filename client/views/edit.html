@@ -25,7 +25,7 @@
 
 <template name="editMenu">
   <nav class="dashboard">
-    <a class="btn cancel" title="{{_ 'cancel' }}" href="/recipe/{{_id}}"><span class="fa fa-arrow-left"></span></a>
+    <a class="btn cancel" title="{{_ 'cancel' }}" href="#"><span class="fa fa-arrow-left"></span></a>
     {{#if isOwner}}
     <a class="btn remove-recipe" title="{{_ 'remove-recipe' }}" href="/"><span class="fa fa-trash"></span></a>
     <a class="btn save-recipe" title="{{_ 'save-recipe' }}" href="/recipe/{{_id}}/edit/image"><span class="fa fa-arrow-right"></span></a>

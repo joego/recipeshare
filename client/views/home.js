@@ -1,6 +1,9 @@
 Template.home.helpers({
   recipes: function() {
-    return Recipes.find({}, {limit: 10});
+    return Recipes.find({}, {
+      sort: {createdAt: -1}, 
+      limit: 10
+    });
   }
 });
 
