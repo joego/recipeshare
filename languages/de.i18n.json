@@ -1,5 +1,5 @@
 {
-  "intro-text": "Zeig der Welt <br> dein geliebtes <br> Essen",
+  "intro-text": "Zeig der Welt <br> dein Lieblings- <br> essen",
   "search": "Gebe hier ein",
   "search-item": "Artikelsuche",
   "search-recipe": "Rezeptsuche",
@@ -9,7 +9,7 @@
   "directions": "Zubereitung",
   "ingredient": "Zutat",
   "ingredient-list-title": "Zutaten",
-  "new-ingredient": "Neue Zutat hinzugefügen",
+  "new-ingredient": "Neue Zutat hinzufügen",
   "save-recipe": "Speichern",
   "edit-recipe": "Rezept bearbeiten",
   "remove-recipe": "Rezept entfernen",
@@ -24,8 +24,8 @@
   "name": "Name",
   "email": "E-Mail",
   "message": "Nachricht",
-  "contact-title": "Teile deine Meinung mit uns",
+  "contact-title": "Teile uns deine Meinung mit",
   "send": "Senden",
   "error-404-title": "Fehler 404",
-  "error-404-text": "Sorry, aber es gibt nichts hier."
+  "error-404-text": "Sorry, aber das gibt es hier nicht."
 }
